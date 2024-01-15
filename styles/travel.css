@@ -12,19 +12,23 @@ nav img {
     width: 3rem;
     height: 3rem;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-img{
+
+.nav-img {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 nav>ul {
     display: flex;
 }
+
 nav li {
     list-style: none;
     margin-right: 40px;
@@ -54,20 +58,76 @@ nav li a {
     color: #FF5400;
     font-family: Mulish;
 }
-/* nav end */
 
+/* nav end */
+.banner {
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+}
+
+.bannr-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+.banner-discrip {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 1rem;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+.index input{
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.find-now input {
+    background: #FF5400;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
 
 
 
 /* mobile device */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav, nav>ul{
+
+    nav,
+    nav>ul, .index {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         align-items: start;
+    }
+    .banner{
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
