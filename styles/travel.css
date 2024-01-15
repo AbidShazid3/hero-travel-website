@@ -94,7 +94,8 @@ nav li a {
     gap: 24px;
     margin-bottom: 100px;
 }
-.index input{
+
+.index input {
     border-radius: 8px;
     color: #FFF;
     font-size: 1rem;
@@ -110,6 +111,38 @@ nav li a {
     border: none;
 }
 
+/* banner end */
+.popular-tour {
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.popular-tour-title {
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.popular-tour-content .popular-tour-discrip {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+
+}
+
+.read-more {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: Mulish;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 30px;
+    margin-top: 35px;
+}
+
 
 
 /* mobile device */
@@ -119,15 +152,20 @@ nav li a {
     }
 
     nav,
-    nav>ul, .index {
+    nav>ul,
+    .index, .popular-tour {
         flex-direction: column;
     }
 
     nav {
         align-items: start;
     }
-    .banner{
+
+    .banner {
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .popular-tour img{
+        width: 100%;
     }
 }
